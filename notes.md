@@ -1,3 +1,5 @@
+# Notes
+
 ## Shortcuts
 
 Because of the popularity of certain directives, there has been an effort to use shorthand for ease-of-use.
@@ -21,3 +23,17 @@ Because of the popularity of certain directives, there has been an effort to use
 	- `<form @submit="addToCart">...</form>`
 - @keyup
 	- `<input @keyup.enter="send">`
+
+---
+
+## Use `:key` when using `v-for`
+
+e.g. `<div v-for="variant in variants" :key="variant.variantId">`
+
+---
+Expression examples
+
+ *  `{{ product + '?' }}`
+ *  `{{ firstName + ' ' + lastName }}`
+ *  `{{ clicked ? true : false }}`
+ *  `{{ message.split('').reverse().join('') }}`

@@ -30,15 +30,9 @@ var app = new Vue({
     },
     updateProduct(variantImage) {
       this.image = variantImage;
+    },
+    removeFromCart() {
+      this.cart -= 1;
     }
   }
 });
-
-/**
- * Expression examples
- *
- *  {{ product + '?' }}
- *  {{ firstName + ' ' + lastName }}
- *  {{ clicked ? true : false }}
- *  {{ message.split('').reverse().join('') }}
- */
