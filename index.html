@@ -27,7 +27,6 @@
 				</ul>
 
 				<div v-for="variant in variants" :key="variant.variantId">
-					<!-- v-on shortcut = @ -->
 					<p @mouseover="updateProduct(variant.variantImage)">{{ variant.variantColor }}</p>
 				</div>
 
