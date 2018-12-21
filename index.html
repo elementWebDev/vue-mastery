@@ -31,13 +31,14 @@
 				</div>
 
 				<button v-on:click="addToCart">Add to Cart</button>
+				<button v-if="cart > 0" @click="removeFromCart">Remove Item</button>
 
 				<div class="cart">
 					<p>Cart({{ cart }})</p>
 				</div>
 
 				<!--
-					answer for chalenge on binding a link
+					answer for challenge on binding a link
 
 					<a :href="url">{{ product }}</a>
 				-->
