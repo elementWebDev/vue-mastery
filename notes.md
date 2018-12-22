@@ -40,7 +40,30 @@ Expression examples
  *  `{{ message.split('').reverse().join('') }}`
 
 ---
+## See instructions below videos
 
-[5. Event Handling `(see notes below video)`](https://www.vuemastery.com/courses/intro-to-vue-js/event-handling)
+[5. Event Handling](https://www.vuemastery.com/courses/intro-to-vue-js/event-handling)
 
 ---
+
+### [6. Class and Style Binding](https://www.vuemastery.com/courses/intro-to-vue-js/class-&-style-binding)
+
+html
+```
+<h1 :style="{ color: color }">...</h1>
+```
+
+js
+```
+data: {
+	color: 'red'
+}
+```
+
+If you prefer, you can use kebab-case for CSS properties instead of camelCase but you must use it as a string (with quotes)
+
+e.g. `'background-color'` vs. `backgroundColor`
+
+---
+
+idea: use / improve this product app for rackbusters feature branch
