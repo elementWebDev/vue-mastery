@@ -31,9 +31,16 @@ Because of the popularity of certain directives, there has been an effort to use
 e.g. `<div v-for="variant in variants" :key="variant.variantId">`
 
 ---
+
 Expression examples
 
  *  `{{ product + '?' }}`
  *  `{{ firstName + ' ' + lastName }}`
  *  `{{ clicked ? true : false }}`
  *  `{{ message.split('').reverse().join('') }}`
+
+---
+
+[5. Event Handling `(see notes below video)`](https://www.vuemastery.com/courses/intro-to-vue-js/event-handling)
+
+---
