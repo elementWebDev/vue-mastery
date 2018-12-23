@@ -40,9 +40,9 @@ Expression examples
  *  `{{ message.split('').reverse().join('') }}`
 
 ---
-## See instructions below videos
+## See instructions below linked videos
 
-[5. Event Handling](https://www.vuemastery.com/courses/intro-to-vue-js/event-handling)
+### [5. Event Handling](https://www.vuemastery.com/courses/intro-to-vue-js/event-handling)
 
 ---
 
@@ -65,5 +65,5 @@ If you prefer, you can use kebab-case for CSS properties instead of camelCase bu
 e.g. `'background-color'` vs. `backgroundColor`
 
 ---
-
-idea: use / improve this product app for rackbusters feature branch
+---
+**`idea`:** use / improve this product app for rackbusters feature branch
