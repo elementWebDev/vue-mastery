@@ -9,7 +9,7 @@ var app = new Vue({
     inventory: 100,
     onSale: true,
     details: ["80% cotton", "20% polyester", "gender-neutral"],
-    variants: [
+    variants: [ //plural
       {
         variantId: 2234,
         variantColor: "green",

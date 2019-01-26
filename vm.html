@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>Product App</title>
+</head>
+<body>
+
+	<div class="nav-bar"></div>
+
+	<div id="app">
+		<div class="product">
+
+			<div class="product-image">
+				<img :src="image" />
+			</div>
+
+			<div class="product-info">
+				<h1>{{ product }}</h1>
+				<p v-show="inStock">In Stock</p>
+				<p v-if="onSale">On Sale!</span>
+
+				<ul>
+					<li v-for="detail in details">{{ detail }}</li>
+				</ul>
+
+				<div v-for="variant in variants"
+						:key="variant.variantId"
+						class="color-box"
+						:style="{ backgroundColor: variant.variantColor }" @mouseover="updateProduct(variant.variantImage)">
+
+				</div>
+
+				<button v-on:click="addToCart" :disabled="!inStock">Add to Cart</button>
+				<button v-if="cart > 0" @click="removeFromCart">Remove Item</button>
+
+				<div class="cart">
+					<p>Cart({{ cart }})</p>
+				</div>
+
+				<!--
+					answer for challenge on binding a link
+
+					<a :href="url">{{ product }}</a>
+				-->
+				<!--
+					<p v-if="inventory > 10">In Stock</p>
+					<p v-else-if="inventory <= 10 && inventory > 0">Almost sold out!</p>
+					<p v-else="inStock">Out of Stock</p>
+				-->
+			</div>
+
+		</div>
+	</div>
+
+	<!-- VUE js development version -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
