@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Product App</title>
+  </head>
+  <body>
+    <!-- v-bind:src="" because v-bind is used so much... 
+					can be used as 
+					:src="image"
+					:alt="description"
+					:href="url"
+					:class="toolTip"
+					:style="isActive"
+					:disabled="isDisabled"
+				-->
+    <div class="nav-bar"></div>
+
+    <div id="app">
+      <div class="product">
+				
+				<div class="product-image">
+          <img :src="image" :alt="description" />
+        </div>
+
+        <div class="product-info">
+					<h1>{{ product }}</h1>
+					<p v-if="inventory >= 10">In Stock</p>
+					<p v-else-if="inventory > 0">Almost sold out!</p>
+					<p v-else>Out of Stock</p>
+					<span v-show="onSale">Sale!</span>
+				</div>
+				
+      </div>
+    </div>
+
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<!-- change for each lesson -->
+    <script src="js/conditional-rendering.js"></script>
+  </body>
+</html>
