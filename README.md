@@ -48,10 +48,10 @@ e.g. `<div v-for="variant in variants" :key="variant.variantId">`
 
 Expression examples
 
- *  `{{ product + '?' }}`
- *  `{{ firstName + ' ' + lastName }}`
- *  `{{ clicked ? true : false }}`
- *  `{{ message.split('').reverse().join('') }}`
+ * `{{ product + '?' }}`
+ * `{{ firstName + ' ' + lastName }}`
+ * `{{ clicked ? true : false }}`
+ * `{{ message.split('').reverse().join('') }}`
 
 ---
 
@@ -96,5 +96,10 @@ e.g. `'background-color'` vs. `backgroundColor`
 **`idea`:** use / improve this product app for rackbusters feature branch
 
 
-![time spent this month](https://wakatime.com/share/@9ac7f693-72d1-4439-bcde-eb86dab1b64c/ac258913-6ebd-4d55-8c7a-91cab25db2c3.svg)
+![time spent this month](https://wakatime.com/share/@9ac7f693-72d1-4439-bcde-eb86dab1b64c/3a3f7284-e29b-4eb8-8a36-7c61a34e95c6.png)
 
+![Languages](https://wakatime.com/share/@9ac7f693-72d1-4439-bcde-eb86dab1b64c/d7324e7b-c43c-47ff-931b-d17fba5c55bd.png)
+
+<!-- 1. <a href="https://wakatime.com"><img src="https://wakatime.com/share/@9ac7f693-72d1-4439-bcde-eb86dab1b64c/3a3f7284-e29b-4eb8-8a36-7c61a34e95c6.png" /></a> -->
+
+<!-- 2. <a href="https://wakatime.com"><img src="https://wakatime.com/share/@9ac7f693-72d1-4439-bcde-eb86dab1b64c/3a3f7284-e29b-4eb8-8a36-7c61a34e95c6.png" /></a> -->
